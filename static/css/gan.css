@@ -1,0 +1,570 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: century gothic;
+}
+header{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+
+
+}
+ul{
+  list-style-type: none;
+  float: left;
+}
+ul li{
+  display: inline-block;
+
+
+}
+ul li a{
+  text-decoration: none;
+
+  padding: 5px 30px;
+  border: 1px solid #transparent;
+}
+.logo{
+  float: left;
+  width: 150px;
+  height: auto;
+  margin-left: 10px;
+}
+.main{
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+  margin-left: 10px;
+
+
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main .search-container {
+  float: right;
+}
+.main .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.main .search-container button:hover {
+  background: #ccc;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer{
+  text-align: center;
+  margin: 2px 0 2px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: auto;
+  border-radius: 5%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+/* Change the color of links on hover */
+
+/* Add a color to the active/current link */
+.main a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.gana{
+  margin: auto;
+
+  margin-left: 370px;
+  height: auto;
+
+
+}
+.fig{
+  background-color: lightskyblue;
+  background-position: center;
+  background-size: cover;
+}
+.ima{
+float: right;
+  width: auto;
+  height: auto;
+  align-content: right;
+  position: relative;
+  margin-bottom: 770px;
+  bottom: -300px;
+  top: -370px;
+  background-color: lightskyblue;
+
+}
+.cob{
+
+  align-content: left;
+  margin-top: 250px;
+  margin-left: 30px;
+  background-color: lightskyblue;
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 25%;
+  background: #f1f1f1;
+}
+form.example button {
+  float: left;
+  width: 5%;
+  padding-top: 15px;
+  padding: 15px;
+  background: lightskyblue;
+  color: lightskyblue;
+  font-size: 17px;
+  border: 3px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+#navlist {
+        background-color: lightskyblue;
+        position: absolute;
+        width: 100%;
+        padding-left: 30px;
+        margin-top: 207px;
+
+    }
+
+    /* styling navlist anchor element */
+    #navlist a {
+        float:left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 15px;
+
+    }
+
+    .navlist-right{
+        float:right;
+    }
+  #navlist a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+
+
+    .slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  background-color: lightskyblue;
+  margin-top: 50px;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: lightskyblue;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+.ins{
+  align-content: center;
+  background-color: lightskyblue;
+  margin-top: 50px;
+  margin-left: 450px;
+}
+.meet{
+  margin-left: 50px;
+}
+
+
+
+
+.slideshow-container1 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-left: 50px;
+  background-color: lightskyblue;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+}
+/* Caption text */
+.text1 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.mySlides1 {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+
+/* The dots/bullets/indicators */
+.dot1 {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color:#fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade1 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+.ss{
+  background-color: lightskyblue;
+  align-content: center;
+  margin-top: 100px;
+
+}
+
+.head{
+  margin-left: 300px;
+  margin-top: 100px;
+
+}
+.news{
+  margin-left: 20px;
+  margin-top: 5pxs;
+}
+.ne{
+  margin-left: 15px;
+  width: 100px;
+  height: 100px;
+  padding-top: 20px;
+
+
+}
+.te{
+  height: 35px;
+  width: 450px;
+  align-content: center;
+}
+
+.sub{
+   position: relative;
+  top: -30px;
+  left: 345px;
+  background-color: skyblue;
+  width: 100px;
+  height: 25px;
+}
+
+.last{
+  margin-top: 30px;
+  background-color: lightskyblue;
+
+}
+
+
+

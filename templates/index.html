@@ -1,0 +1,322 @@
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ieswebsite</title>
+	<link href="{% static 'gan.css' %}">
+</head>
+<body>
+
+	<div class="fig">
+	<div class="gana">
+	<h1>welcome to ineuron</h1>
+	</div>
+	<header>
+		<div class="main">
+			<div>
+				<img src="https://ineuron.ai/assets/frontend/img/logo.png" class="logo">
+			</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">More</a></li>
+				 <div class="search-container">
+    <form action="search">
+      <input type="text" placeholder="Search courses" name="search">
+      <button type="submit" value="sub"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+			</ul>
+
+		</div>
+
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-conten" action="register" method="POST">
+      {% csrf_token %}
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+         <label for="username"><b>username</b></label>
+      <input type="text" placeholder="Enter name" name="username" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw1" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+    <div>
+        {% for message in messages %}
+        <h3>
+            {{message}}
+        </h3>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id02" class="modal">
+
+  <form class="modal-content animate" action="login" method="POST">
+      {% csrf_token %}
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <button type="submit">login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+    <div>
+        {% for message in messages %}
+        <h3>
+            {{message}}
+        </h3>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+	<div class="cob">
+		<h1>Affordable &</h1>
+		<h1>competent courses</h1>
+	     <form class="example" action="action_page.php">
+  <input type="text" placeholder="Search courses" name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+		<div>
+
+		<img src="https://ineuron.ai/assets/frontend/img/header-illustration.png" class="ima">
+	</div>
+	</div>
+	 <div id="navlist">
+	 	<div>
+	 		<h1>popular courses</h1>
+	 	</div>
+        <a href="#">All</a>
+        <a href="#">machine learning</a>
+        <a href="#">depp learning</a>
+        <a href="#">business analytics</a>
+        <a href="#">data science</a>
+        <div class="slideshow-container">
+
+<div class="mySlides">
+  <img src="https://ineuron.ai/uploads/thumbnails/course_thumbnails/course_thumbnail_default_107.jpg" width="300" height="300" class=im1>
+  <p class="author">Deep Learning</p>
+  <p>course fee : 3500</p>
+</div>
+
+<div class="mySlides">
+   <img src="https://ineuron.ai/uploads/thumbnails/course_thumbnails/course_thumbnail_default_108.jpg" width="300" height="300">
+  <p class="author">Machine Learning</p>
+  <p>course fee : 3500</p>
+</div>
+
+<div class="mySlides">
+  <img src="https://ineuron.ai/uploads/thumbnails/course_thumbnails/course_thumbnail_default_100.jpg" width="300" height="300">
+  <p class="author">power Bi</p>
+  <p>course fee : 3500</p>
+</div>
+<div class="mySlides">
+  <img src="https://ineuron.ai/uploads/thumbnails/course_thumbnails/course_thumbnail_default_101.jpg" width="300" height="300">
+  <p class="author">Tableau</p>
+  <p>course fee : 3500</p>
+</div>
+<div class="mySlides">
+  <img src="https://ineuron.ai/uploads/thumbnails/course_thumbnails/course_thumbnail_default_111.jpg" width="300" height="300">
+  <p class="author">chatbot using google dialogflow</p>
+  <p>course fee : free</p>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class=ins>
+  <p class="meet">meet instructors</p>
+  <h2>Top & Famous instructors</h2>
+</div>
+
+<div class="slideshow-container1">
+
+<div class="mySlides1 fade1">
+
+  <img src="https://ineuron.ai//uploads/user_image/sudhanshuy3.png" width="300" height="300">
+  <div class="text1">sudhanshu kumar</div>
+</div>
+
+<div class="mySlides1 fade1">
+
+  <img src="https://ineuron.ai//uploads/user_image/krish2.png" width="300" height="300">
+  <div class="text1">kridh naik</div>
+</div>
+
+<div class="mySlides1 fade1">
+
+  <img src="https://ineuron.ai//uploads/user_image/jiwitesh2.png" width="300" height="300">
+  <div class="text1">jiteshwar</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center" class="dot111-container">
+  <span class="dot1"></span>
+  <span class="dot1"></span>
+  <span class="dot1"></span>
+</div>
+
+<script>
+var slideIndex1 = 0;
+showSlides1();
+
+function showSlides1() {
+  var i;
+  var slides1 = document.getElementsByClassName("mySlides1");
+  var dots1 = document.getElementsByClassName("dot");
+  for (i = 0; i < slides1.length; i++) {
+    slides1[i].style.display = "none";
+  }
+  slideIndex1++;
+  if (slideIndex1 > slides1.length) {slideIndex1 = 1}
+  for (i = 0; i < dots1.length; i++) {
+    dots1[i].className = dots1[i].className.replace(" active", "");
+  }
+  slides1[slideIndex1-1].style.display = "block";
+  dots1[slideIndex1-1].className += " active";
+  setTimeout(showSlides1, 2500); // Change image every 2 seconds
+}
+</script>
+<div class="head">
+  <h1>Join Thousand Of Happy Students!</h1>
+  <p class="news">Subscribe our newsletter & get latest news and updation!</p>
+  <form action="/action_page.php">
+  <div class="ne">
+  <input type="text" class="te" placeholder="     enter your mail address" align-content="center">
+  <input type="submit" value="subscribe" align="right" class="sub">
+
+</div>
+</form>
+
+</div>
+<div class="last">
+ <img src="https://ineuron.ai//assets/frontend/img/logo-light.png" class="l1" width="100" height="100">
+
+</div>
+
+
+
+</div>
+
+        <iframe
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/2a0dfacb-9770-4e2a-9fc8-21e43e66055c">
+</iframe>
+
+
+
+
+</header>
+
+
+
+
+</div>
+</body>
+</html>
